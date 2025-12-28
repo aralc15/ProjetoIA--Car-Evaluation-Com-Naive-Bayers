@@ -4,6 +4,8 @@ import urllib.request
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from sklearn.model_selection import train_test_split
+
 # ==========================================
 # 1. Config e definicao
 # ==========================================
@@ -84,7 +86,7 @@ print("="*60)
 print("Transformando categorias de texto em números respeitando a ordem de grandeza.")
 
 # Definiçao dos Mapeamentos (Sugestão Formal)
-map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'v-high': 3}
+map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'vhigh': 3}
 map_doors = {'2': 2, '3': 3, '4': 4, '5more': 5}
 map_persons = {'2': 2, '4': 4, 'more': 5}
 map_lug = {'small': 0, 'med': 1, 'big': 2}
@@ -118,7 +120,7 @@ print(df_encoded.dtypes)
 COLUMNS = ["buying", "maint", "doors", "persons", "lug_boot", "safety", "class"]
 
 # 2. Definição dos Mapeamentos Ordinais (Baseado no Passo 2)
-map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'vhigh': 3} # Corrigido 'v-high' para 'vhigh' conforme o dado bruto
+map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'vhigh': 3} 
 map_doors = {'2': 2, '3': 3, '4': 4, '5more': 5}
 map_persons = {'2': 2, '4': 4, 'more': 5}
 map_lug = {'small': 0, 'med': 1, 'big': 2}
