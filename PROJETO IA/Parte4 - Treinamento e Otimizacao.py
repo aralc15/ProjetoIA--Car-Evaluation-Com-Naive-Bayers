@@ -89,7 +89,7 @@ print("Observação: Forte desbalanceamento da classe 'unacc'.")
 # ==========================================
 # 5. MAPEAMENTO E CODIFICAÇÃO ORDINAL
 # ==========================================
-map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'v-high': 3}
+map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'vhigh': 3}
 map_doors = {'2': 2, '3': 3, '4': 4, '5more': 5}
 map_persons = {'2': 2, '4': 4, 'more': 5}
 map_lug = {'small': 0, 'med': 1, 'big': 2}
