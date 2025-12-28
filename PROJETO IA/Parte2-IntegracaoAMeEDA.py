@@ -84,7 +84,7 @@ print("="*60)
 print("Transformando categorias de texto em números respeitando a ordem de grandeza.")
 
 # Definiçao dos Mapeamentos (Sugestão Formal)
-map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'v-high': 3}
+map_buying_maint = {'low': 0, 'med': 1, 'high': 2, 'vhigh': 3}
 map_doors = {'2': 2, '3': 3, '4': 4, '5more': 5}
 map_persons = {'2': 2, '4': 4, 'more': 5}
 map_lug = {'small': 0, 'med': 1, 'big': 2}
@@ -110,4 +110,5 @@ print("-"*60)
 print(df_encoded.head())
 print("-"*60)
 print("\nNovos tipos de dados (agora numéricos):")
+
 print(df_encoded.dtypes)
